@@ -1,0 +1,22 @@
+[project]
+name = "mindvault"
+version = "0.1.0"
+description = "A local RAG system that lets you query your own text files using Ollama — no cloud, no API keys."
+readme = "README.md"
+authors = [
+    { name = "Bhavesh Yadav", email = "" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=2.0.2",
+    "ollama>=0.6.3",
+    "python-dotenv>=1.2.1",
+    "requests>=2.32.5",
+]
+
+[project.scripts]
+mindvault = "mindvault:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
